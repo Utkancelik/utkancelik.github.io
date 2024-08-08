@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #282c34;
             color: #ffffff;
+            overflow-x: hidden; /* Yatay kaydırmayı engellemek için */
         }
         header {
             background-color: #61dafb;
@@ -48,11 +49,19 @@
             transform: scale(1.05);
         }
         .game img {
-            max-width: 300px;
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
+        }
+        .image-container {
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         .game-content {
             max-width: 600px;
+            overflow-y: auto; /* Dikey kaydırmayı etkinleştirmek için */
         }
         .game h2 {
             color: #61dafb;
@@ -78,11 +87,6 @@
         }
         .social-icons a:hover {
             color: #ffffff;
-        }
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
         }
     </style>
 </head>
