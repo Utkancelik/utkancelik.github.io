@@ -3,43 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceren Yüksel - Game Developer Portfolio</title>
+    <title>Utkan Çelik - Game Developer Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #282c34;
+            color: #ffffff;
         }
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #61dafb;
+            color: #282c34;
             text-align: center;
-            padding: 1em 0;
+            padding: 2em 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
         .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            gap: 20px;
         }
         #main {
-            margin-top: 30px;
+            margin-top: 20px;
         }
         .game {
-            background: #fff;
+            background: #3a3f47;
             padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .game:hover {
+            transform: scale(1.05);
         }
         .game img {
             max-width: 100%;
+            border-radius: 8px;
         }
         .game h2 {
-            color: #333;
+            color: #61dafb;
+        }
+        .game p {
+            color: #adb5bd;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #212529;
+            color: #adb5bd;
             text-align: center;
             padding: 1em 0;
             position: fixed;
@@ -47,29 +58,33 @@
             width: 100%;
         }
         .social-icons a {
-            color: #fff;
+            color: #61dafb;
             margin: 0 10px;
             text-decoration: none;
             font-size: 1.5em;
+            transition: color 0.2s;
+        }
+        .social-icons a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ceren Yüksel - Game Developer Portfolio</h1>
+        <h1>Utkan Çelik - Game Developer Portfolio</h1>
     </header>
     <div class="container" id="main">
         <div class="game">
             <h2>Game Title 1</h2>
             <img src="game1.jpg" alt="Game 1">
             <p>Description of Game 1. Developed using Unity. This game features...</p>
-            <p><a href="link_to_game_1">Play Now</a></p>
+            <p><a href="link_to_game_1" target="_blank" style="color: #61dafb;">Play Now</a></p>
         </div>
         <div class="game">
             <h2>Game Title 2</h2>
             <img src="game2.jpg" alt="Game 2">
             <p>Description of Game 2. Developed using Unreal Engine. This game features...</p>
-            <p><a href="link_to_game_2">Play Now</a></p>
+            <p><a href="link_to_game_2" target="_blank" style="color: #61dafb;">Play Now</a></p>
         </div>
         <!-- Add more game sections as needed -->
     </div>
