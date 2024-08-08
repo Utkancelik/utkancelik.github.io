@@ -25,16 +25,8 @@
             max-width: 1200px; /* Maksimum genişliği belirlemek için */
             margin: 20px auto;
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            overflow: visible; /* Dikey kaydırmanın çalışması için */
-        }
-        #main {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 40px;
             overflow: visible; /* Dikey kaydırmanın çalışması için */
         }
         .game {
@@ -47,7 +39,6 @@
             flex-direction: row;
             align-items: flex-start;
             gap: 20px;
-            width: 100%; /* İçeriklerin tam genişliğe yayılması için */
             flex-wrap: wrap; /* İçeriklerin sarmalanması için */
         }
         .game:hover {
@@ -96,6 +87,7 @@
         <h1>Utkan Çelik - Game Developer Portfolio</h1>
     </header>
     <div class="container" id="main">
+        <!-- Ninja Chop 2D - Shuriken -->
         <div class="game">
             <div class="image-container">
                 <img src="images/Game_Logo.jpg" alt="Ninja Chop 2D - Shuriken Logo">
@@ -119,7 +111,30 @@
                 <p><a href="https://youtube.com/playlist?list=PLjRBsjKhG52oKKZxQGPtARgLlnmeByp3u&si=IvDOCiu8IsgaGkS_" target="_blank" style="color: #61dafb;">Watch Gameplay Video</a></p>
             </div>
         </div>
-        <!-- Add more game sections as needed -->
+        <!-- Let's Steal 3D -->
+        <div class="game">
+            <div class="image-container">
+                <img src="images/LetsSteal3D_Logo.jpg" alt="Let's Steal 3D Logo">
+                <img src="images/LetsSteal3D_Gameplay.jpg" alt="Let's Steal 3D Gameplay">
+            </div>
+            <div class="game-content">
+                <h2>Let's Steal 3D</h2>
+                <p><strong>Let's Steal 3D</strong> is a 3D game focused on theft and object stealing. The main character, a child, takes orders from a dangerous goose to steal targeted objects from various locations without getting caught by security guards. Using a joystick, the player moves the character to grab the object and deliver it to the designated spot, avoiding detection. The game features 20 levels that become increasingly difficult.</p>
+                <ul>
+                    <li>Move the character using a joystick to steal objects.</li>
+                    <li>Avoid security guards and deliver the object to the designated spot.</li>
+                    <li>Progress through 20 levels with increasing difficulty.</li>
+                </ul>
+                <p><strong>Gameplay Features:</strong></p>
+                <ul>
+                    <li>3D environments with dynamic challenges.</li>
+                    <li>Stealth mechanics to avoid detection.</li>
+                    <li>Engaging storyline with humorous elements.</li>
+                </ul>
+                <p>Watch the gameplay video below to see Let's Steal 3D in action!</p>
+                <p><a href="https://youtube.com/playlist?list=PLjRBsjKhG52oKKZxQGPtARgLlnmeByp3u&si=IvDOCiu8IsgaGkS_" target="_blank" style="color: #61dafb;">Watch Gameplay Video</a></p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Connect with me on social media</p>
