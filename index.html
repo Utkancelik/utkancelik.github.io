@@ -26,6 +26,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            overflow: visible; /* Dikey kaydırmanın çalışması için */
         }
         #main {
             margin-top: 20px;
@@ -33,6 +34,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            overflow: visible; /* Dikey kaydırmanın çalışması için */
         }
         .game {
             background: #3a3f47;
@@ -44,24 +46,24 @@
             flex-direction: row;
             align-items: flex-start;
             gap: 20px;
+            width: 100%; /* İçeriklerin tam genişliğe yayılması için */
+            flex-wrap: wrap; /* İçeriklerin sarmalanması için */
         }
         .game:hover {
             transform: scale(1.05);
         }
         .game img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            max-width: 300px;
             border-radius: 8px;
         }
         .image-container {
-            max-width: 300px;
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
         .game-content {
             max-width: 600px;
-            overflow-y: auto; /* Dikey kaydırmayı etkinleştirmek için */
         }
         .game h2 {
             color: #61dafb;
@@ -74,8 +76,6 @@
             color: #adb5bd;
             text-align: center;
             padding: 1em 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
         .social-icons a {
